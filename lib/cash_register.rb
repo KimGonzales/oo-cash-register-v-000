@@ -18,7 +18,7 @@ class CashRegister
       @total = total - (@discount*total)
       "After the discount, the total comes to $#{@total.to_i}."
     else
-      "Nope"
+      "There is no discount to apply."
     end
   end
 
