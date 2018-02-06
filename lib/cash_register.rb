@@ -12,7 +12,7 @@ class CashRegister
   def add_item(title, price, quantity = nil)
     if quantity
       quantity.to_i.times {@items << title}
-      @total += price * quantit
+      @total += price * quantity
     else
       @items << title
       @total += price
