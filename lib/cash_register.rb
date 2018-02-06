@@ -14,7 +14,7 @@ class CashRegister
       @items << t
       @total += pr
     else
-      q.to_i.times {@items << title}
+      q.to_i.times {@items << t}
       @total +=(pr * q)
     end
 
