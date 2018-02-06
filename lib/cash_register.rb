@@ -12,6 +12,8 @@ class CashRegister
   def add_item(title, price, quantity=nil)
     unless !quantity
       @items << title * quantity
+    else
+      @items << title
     end
     !quantity ? @total +=price : @total += (price*quantity)
   end
