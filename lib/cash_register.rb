@@ -15,6 +15,7 @@ class CashRegister
     else
       quantity.to_i.times {@items << title}
     end
+    
     !quantity ? @total +=price : @total += (price*quantity)
   end
 
