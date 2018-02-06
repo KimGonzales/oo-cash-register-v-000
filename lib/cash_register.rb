@@ -9,13 +9,13 @@ class CashRegister
     @items =[]
   end
 
-  def add_item(title, price, quantity=nil)
-    if !quantity
-      @items << title
-      @total += price
+  def add_item(t, pr, q=nil)
+    if !q
+      @items << t
+      @total += pr
     else
-      quantity.to_i.times {@items << title}
-      @total +=(price*quantity)
+      q.to_i.times {@items << title}
+      @total +=(pr * q)
     end
 
     #!quantity ? @total +=price : @total += (price*quantity)
