@@ -10,7 +10,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = nil)
-    if !quantity
+    if quantity
       @items << title
       @total += price
     else
@@ -35,5 +35,6 @@ class CashRegister
     @items
   end
 
+  @
 
 end
